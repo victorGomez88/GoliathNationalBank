@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E62F03F2503812E004E1CCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F03E2503812E004E1CCD /* AppDelegate.swift */; };
+		4E62F0412503812E004E1CCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0402503812E004E1CCD /* SceneDelegate.swift */; };
+		4E62F0432503812E004E1CCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0422503812E004E1CCD /* ViewController.swift */; };
+		4E62F0462503812E004E1CCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E62F0442503812E004E1CCD /* Main.storyboard */; };
+		4E62F0482503812F004E1CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E62F0472503812F004E1CCD /* Assets.xcassets */; };
+		4E62F04B2503812F004E1CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E62F0492503812F004E1CCD /* LaunchScreen.storyboard */; };
+		4E62F0562503812F004E1CCD /* GoliathNationalBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0552503812F004E1CCD /* GoliathNationalBankTests.swift */; };
+		4E62F0612503812F004E1CCD /* GoliathNationalBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0602503812F004E1CCD /* GoliathNationalBankUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E62F0522503812F004E1CCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E62F0332503812E004E1CCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E62F03A2503812E004E1CCD;
+			remoteInfo = GoliathNationalBank;
+		};
+		4E62F05D2503812F004E1CCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E62F0332503812E004E1CCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E62F03A2503812E004E1CCD;
+			remoteInfo = GoliathNationalBank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E62F03B2503812E004E1CCD /* GoliathNationalBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoliathNationalBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E62F03E2503812E004E1CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E62F0402503812E004E1CCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4E62F0422503812E004E1CCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E62F0452503812E004E1CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E62F0472503812F004E1CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E62F04A2503812F004E1CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E62F04C2503812F004E1CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E62F0512503812F004E1CCD /* GoliathNationalBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoliathNationalBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E62F0552503812F004E1CCD /* GoliathNationalBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoliathNationalBankTests.swift; sourceTree = "<group>"; };
+		4E62F0572503812F004E1CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E62F05C2503812F004E1CCD /* GoliathNationalBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoliathNationalBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E62F0602503812F004E1CCD /* GoliathNationalBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoliathNationalBankUITests.swift; sourceTree = "<group>"; };
+		4E62F0622503812F004E1CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E62F0382503812E004E1CCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E62F04E2503812F004E1CCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E62F0592503812F004E1CCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E62F0322503812E004E1CCD = {
+			isa = PBXGroup;
+			children = (
+				4E62F03D2503812E004E1CCD /* GoliathNationalBank */,
+				4E62F0542503812F004E1CCD /* GoliathNationalBankTests */,
+				4E62F05F2503812F004E1CCD /* GoliathNationalBankUITests */,
+				4E62F03C2503812E004E1CCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E62F03C2503812E004E1CCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E62F03B2503812E004E1CCD /* GoliathNationalBank.app */,
+				4E62F0512503812F004E1CCD /* GoliathNationalBankTests.xctest */,
+				4E62F05C2503812F004E1CCD /* GoliathNationalBankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E62F03D2503812E004E1CCD /* GoliathNationalBank */ = {
+			isa = PBXGroup;
+			children = (
+				4E62F03E2503812E004E1CCD /* AppDelegate.swift */,
+				4E62F0402503812E004E1CCD /* SceneDelegate.swift */,
+				4E62F0422503812E004E1CCD /* ViewController.swift */,
+				4E62F0442503812E004E1CCD /* Main.storyboard */,
+				4E62F0472503812F004E1CCD /* Assets.xcassets */,
+				4E62F0492503812F004E1CCD /* LaunchScreen.storyboard */,
+				4E62F04C2503812F004E1CCD /* Info.plist */,
+			);
+			path = GoliathNationalBank;
+			sourceTree = "<group>";
+		};
+		4E62F0542503812F004E1CCD /* GoliathNationalBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E62F0552503812F004E1CCD /* GoliathNationalBankTests.swift */,
+				4E62F0572503812F004E1CCD /* Info.plist */,
+			);
+			path = GoliathNationalBankTests;
+			sourceTree = "<group>";
+		};
+		4E62F05F2503812F004E1CCD /* GoliathNationalBankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E62F0602503812F004E1CCD /* GoliathNationalBankUITests.swift */,
+				4E62F0622503812F004E1CCD /* Info.plist */,
+			);
+			path = GoliathNationalBankUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E62F03A2503812E004E1CCD /* GoliathNationalBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E62F0652503812F004E1CCD /* Build configuration list for PBXNativeTarget "GoliathNationalBank" */;
+			buildPhases = (
+				4E62F0372503812E004E1CCD /* Sources */,
+				4E62F0382503812E004E1CCD /* Frameworks */,
+				4E62F0392503812E004E1CCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoliathNationalBank;
+			productName = GoliathNationalBank;
+			productReference = 4E62F03B2503812E004E1CCD /* GoliathNationalBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E62F0502503812F004E1CCD /* GoliathNationalBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E62F0682503812F004E1CCD /* Build configuration list for PBXNativeTarget "GoliathNationalBankTests" */;
+			buildPhases = (
+				4E62F04D2503812F004E1CCD /* Sources */,
+				4E62F04E2503812F004E1CCD /* Frameworks */,
+				4E62F04F2503812F004E1CCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E62F0532503812F004E1CCD /* PBXTargetDependency */,
+			);
+			name = GoliathNationalBankTests;
+			productName = GoliathNationalBankTests;
+			productReference = 4E62F0512503812F004E1CCD /* GoliathNationalBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E62F05B2503812F004E1CCD /* GoliathNationalBankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E62F06B2503812F004E1CCD /* Build configuration list for PBXNativeTarget "GoliathNationalBankUITests" */;
+			buildPhases = (
+				4E62F0582503812F004E1CCD /* Sources */,
+				4E62F0592503812F004E1CCD /* Frameworks */,
+				4E62F05A2503812F004E1CCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E62F05E2503812F004E1CCD /* PBXTargetDependency */,
+			);
+			name = GoliathNationalBankUITests;
+			productName = GoliathNationalBankUITests;
+			productReference = 4E62F05C2503812F004E1CCD /* GoliathNationalBankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E62F0332503812E004E1CCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Victor Gomez";
+				TargetAttributes = {
+					4E62F03A2503812E004E1CCD = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					4E62F0502503812F004E1CCD = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 4E62F03A2503812E004E1CCD;
+					};
+					4E62F05B2503812F004E1CCD = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 4E62F03A2503812E004E1CCD;
+					};
+				};
+			};
+			buildConfigurationList = 4E62F0362503812E004E1CCD /* Build configuration list for PBXProject "GoliathNationalBank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E62F0322503812E004E1CCD;
+			productRefGroup = 4E62F03C2503812E004E1CCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E62F03A2503812E004E1CCD /* GoliathNationalBank */,
+				4E62F0502503812F004E1CCD /* GoliathNationalBankTests */,
+				4E62F05B2503812F004E1CCD /* GoliathNationalBankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E62F0392503812E004E1CCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E62F04B2503812F004E1CCD /* LaunchScreen.storyboard in Resources */,
+				4E62F0482503812F004E1CCD /* Assets.xcassets in Resources */,
+				4E62F0462503812E004E1CCD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E62F04F2503812F004E1CCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E62F05A2503812F004E1CCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E62F0372503812E004E1CCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E62F0432503812E004E1CCD /* ViewController.swift in Sources */,
+				4E62F03F2503812E004E1CCD /* AppDelegate.swift in Sources */,
+				4E62F0412503812E004E1CCD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E62F04D2503812F004E1CCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E62F0562503812F004E1CCD /* GoliathNationalBankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E62F0582503812F004E1CCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E62F0612503812F004E1CCD /* GoliathNationalBankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E62F0532503812F004E1CCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E62F03A2503812E004E1CCD /* GoliathNationalBank */;
+			targetProxy = 4E62F0522503812F004E1CCD /* PBXContainerItemProxy */;
+		};
+		4E62F05E2503812F004E1CCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E62F03A2503812E004E1CCD /* GoliathNationalBank */;
+			targetProxy = 4E62F05D2503812F004E1CCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E62F0442503812E004E1CCD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E62F0452503812E004E1CCD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E62F0492503812F004E1CCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E62F04A2503812F004E1CCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E62F0632503812F004E1CCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E62F0642503812F004E1CCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E62F0662503812F004E1CCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35NMDGACU5;
+				INFOPLIST_FILE = GoliathNationalBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Victor-Gomez.GoliathNationalBank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E62F0672503812F004E1CCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35NMDGACU5;
+				INFOPLIST_FILE = GoliathNationalBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Victor-Gomez.GoliathNationalBank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E62F0692503812F004E1CCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35NMDGACU5;
+				INFOPLIST_FILE = GoliathNationalBankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Victor-Gomez.GoliathNationalBankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoliathNationalBank.app/GoliathNationalBank";
+			};
+			name = Debug;
+		};
+		4E62F06A2503812F004E1CCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35NMDGACU5;
+				INFOPLIST_FILE = GoliathNationalBankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Victor-Gomez.GoliathNationalBankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoliathNationalBank.app/GoliathNationalBank";
+			};
+			name = Release;
+		};
+		4E62F06C2503812F004E1CCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35NMDGACU5;
+				INFOPLIST_FILE = GoliathNationalBankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Victor-Gomez.GoliathNationalBankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoliathNationalBank;
+			};
+			name = Debug;
+		};
+		4E62F06D2503812F004E1CCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35NMDGACU5;
+				INFOPLIST_FILE = GoliathNationalBankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Victor-Gomez.GoliathNationalBankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoliathNationalBank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E62F0362503812E004E1CCD /* Build configuration list for PBXProject "GoliathNationalBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E62F0632503812F004E1CCD /* Debug */,
+				4E62F0642503812F004E1CCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E62F0652503812F004E1CCD /* Build configuration list for PBXNativeTarget "GoliathNationalBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E62F0662503812F004E1CCD /* Debug */,
+				4E62F0672503812F004E1CCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E62F0682503812F004E1CCD /* Build configuration list for PBXNativeTarget "GoliathNationalBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E62F0692503812F004E1CCD /* Debug */,
+				4E62F06A2503812F004E1CCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E62F06B2503812F004E1CCD /* Build configuration list for PBXNativeTarget "GoliathNationalBankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E62F06C2503812F004E1CCD /* Debug */,
+				4E62F06D2503812F004E1CCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E62F0332503812E004E1CCD /* Project object */;
+}
