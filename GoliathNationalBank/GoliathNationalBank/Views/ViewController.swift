@@ -9,15 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    let services : GNBServices = GNBServices()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        services.getRates()
-        
-//        services.getTransactions()
     }
 
 

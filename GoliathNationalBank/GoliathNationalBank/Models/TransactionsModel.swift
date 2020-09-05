@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class TransactionModel : Mappable {
+class TransactionsModel : Mappable {
     
     var transaction : String?
     var amount : String?

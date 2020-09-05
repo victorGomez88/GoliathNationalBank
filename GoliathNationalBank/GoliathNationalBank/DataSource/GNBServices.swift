@@ -33,12 +33,12 @@ class GNBServices {
     }
     
     
-    func getTransactions(success: (@escaping ([TransactionModel]) -> Void),
+    func getTransactions(success: (@escaping ([TransactionsModel]) -> Void),
                          failure: (@escaping () -> Void)){
         
         BaseApiService.doGetRequest(params: nil,
                                     request: REQUESTNAMES.TRANSACTIONS.rawValue,
-                                    outputClass: TransactionModel(),
+                                    outputClass: TransactionsModel(),
                                     success: { response in
                                         
                                         success(response)
