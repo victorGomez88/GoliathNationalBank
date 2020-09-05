@@ -12,8 +12,6 @@
 		24526720BBF3EDE3D1F56536 /* Pods_GoliathNationalBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4116410FF7D15A8F8205C968 /* Pods_GoliathNationalBank.framework */; };
 		4E62F03F2503812E004E1CCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F03E2503812E004E1CCD /* AppDelegate.swift */; };
 		4E62F0412503812E004E1CCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0402503812E004E1CCD /* SceneDelegate.swift */; };
-		4E62F0432503812E004E1CCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0422503812E004E1CCD /* ViewController.swift */; };
-		4E62F0462503812E004E1CCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E62F0442503812E004E1CCD /* Main.storyboard */; };
 		4E62F0482503812F004E1CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E62F0472503812F004E1CCD /* Assets.xcassets */; };
 		4E62F04B2503812F004E1CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E62F0492503812F004E1CCD /* LaunchScreen.storyboard */; };
 		4E62F0562503812F004E1CCD /* GoliathNationalBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0552503812F004E1CCD /* GoliathNationalBankTests.swift */; };
@@ -24,6 +22,11 @@
 		4E62F07B2503A1D9004E1CCD /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F07A2503A1D9004E1CCD /* BaseApiService.swift */; };
 		4E62F0822503CCE4004E1CCD /* ProductsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0812503CCE4004E1CCD /* ProductsListPresenter.swift */; };
 		4E62F08E2503D13B004E1CCD /* TransactionsProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F08D2503D13B004E1CCD /* TransactionsProductPresenter.swift */; };
+		4E62F0902503D25A004E1CCD /* ProductsViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F08F2503D25A004E1CCD /* ProductsViewDelegate.swift */; };
+		4E62F0922503D291004E1CCD /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0912503D291004E1CCD /* ProductsViewController.swift */; };
+		4E62F0942503D4A1004E1CCD /* Products.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E62F0932503D4A1004E1CCD /* Products.storyboard */; };
+		4E62F0962503E4FB004E1CCD /* RatesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0952503E4FB004E1CCD /* RatesListModel.swift */; };
+		4E62F0982503E565004E1CCD /* TransactionsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0972503E565004E1CCD /* TransactionsListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +53,6 @@
 		4E62F03B2503812E004E1CCD /* GoliathNationalBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoliathNationalBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E62F03E2503812E004E1CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E62F0402503812E004E1CCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4E62F0422503812E004E1CCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4E62F0452503812E004E1CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E62F0472503812F004E1CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E62F04A2503812F004E1CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E62F04C2503812F004E1CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +68,11 @@
 		4E62F07A2503A1D9004E1CCD /* BaseApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiService.swift; sourceTree = "<group>"; };
 		4E62F0812503CCE4004E1CCD /* ProductsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListPresenter.swift; sourceTree = "<group>"; };
 		4E62F08D2503D13B004E1CCD /* TransactionsProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsProductPresenter.swift; sourceTree = "<group>"; };
+		4E62F08F2503D25A004E1CCD /* ProductsViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewDelegate.swift; sourceTree = "<group>"; };
+		4E62F0912503D291004E1CCD /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		4E62F0932503D4A1004E1CCD /* Products.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Products.storyboard; sourceTree = "<group>"; };
+		4E62F0952503E4FB004E1CCD /* RatesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesListModel.swift; sourceTree = "<group>"; };
+		4E62F0972503E565004E1CCD /* TransactionsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListModel.swift; sourceTree = "<group>"; };
 		6290BA8DB03B824C65ED73D8 /* Pods-GoliathNationalBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoliathNationalBankTests.debug.xcconfig"; path = "Target Support Files/Pods-GoliathNationalBankTests/Pods-GoliathNationalBankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66437472329D1B0EE11D4FA0 /* Pods-GoliathNationalBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoliathNationalBankTests.release.xcconfig"; path = "Target Support Files/Pods-GoliathNationalBankTests/Pods-GoliathNationalBankTests.release.xcconfig"; sourceTree = "<group>"; };
 		7F64FCA4CE4F99D98BC5C1E2 /* Pods-GoliathNationalBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoliathNationalBankUITests.release.xcconfig"; path = "Target Support Files/Pods-GoliathNationalBankUITests/Pods-GoliathNationalBankUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,12 +137,8 @@
 				4E62F0882503D103004E1CCD /* TransactionsProduct */,
 				4E62F0832503CFDD004E1CCD /* Products */,
 				4E62F0782503A1BE004E1CCD /* Commons */,
-				4E62F07025038447004E1CCD /* Views */,
-				4E62F06F2503843E004E1CCD /* Models */,
-				4E62F06E25038437004E1CCD /* DataSource */,
 				4E62F03E2503812E004E1CCD /* AppDelegate.swift */,
 				4E62F0402503812E004E1CCD /* SceneDelegate.swift */,
-				4E62F0442503812E004E1CCD /* Main.storyboard */,
 				4E62F0472503812F004E1CCD /* Assets.xcassets */,
 				4E62F0492503812F004E1CCD /* LaunchScreen.storyboard */,
 				4E62F04C2503812F004E1CCD /* Info.plist */,
@@ -173,23 +175,17 @@
 		4E62F06F2503843E004E1CCD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4E62F07425038B02004E1CCD /* RatesModel.swift */,
-				4E62F0762503999F004E1CCD /* TransactionsModel.swift */,
+				4E62F09A250458C5004E1CCD /* Rates */,
+				4E62F099250458A0004E1CCD /* Transactions */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		4E62F07025038447004E1CCD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4E62F0422503812E004E1CCD /* ViewController.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		4E62F0782503A1BE004E1CCD /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				4E62F06F2503843E004E1CCD /* Models */,
+				4E62F06E25038437004E1CCD /* DataSource */,
 				4E62F0792503A1C8004E1CCD /* Bases */,
 			);
 			path = Commons;
@@ -239,6 +235,9 @@
 		4E62F0872503D027004E1CCD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4E62F08F2503D25A004E1CCD /* ProductsViewDelegate.swift */,
+				4E62F0912503D291004E1CCD /* ProductsViewController.swift */,
+				4E62F0932503D4A1004E1CCD /* Products.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,6 +280,24 @@
 				4E62F08D2503D13B004E1CCD /* TransactionsProductPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4E62F099250458A0004E1CCD /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				4E62F0762503999F004E1CCD /* TransactionsModel.swift */,
+				4E62F0972503E565004E1CCD /* TransactionsListModel.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		4E62F09A250458C5004E1CCD /* Rates */ = {
+			isa = PBXGroup;
+			children = (
+				4E62F07425038B02004E1CCD /* RatesModel.swift */,
+				4E62F0952503E4FB004E1CCD /* RatesListModel.swift */,
+			);
+			path = Rates;
 			sourceTree = "<group>";
 		};
 		6F69474A42477BF80BD856E1 /* Pods */ = {
@@ -414,9 +431,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E62F0942503D4A1004E1CCD /* Products.storyboard in Resources */,
 				4E62F04B2503812F004E1CCD /* LaunchScreen.storyboard in Resources */,
 				4E62F0482503812F004E1CCD /* Assets.xcassets in Resources */,
-				4E62F0462503812E004E1CCD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,13 +544,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E62F0982503E565004E1CCD /* TransactionsListModel.swift in Sources */,
 				4E62F0772503999F004E1CCD /* TransactionsModel.swift in Sources */,
 				4E62F07525038B02004E1CCD /* RatesModel.swift in Sources */,
-				4E62F0432503812E004E1CCD /* ViewController.swift in Sources */,
 				4E62F03F2503812E004E1CCD /* AppDelegate.swift in Sources */,
+				4E62F0922503D291004E1CCD /* ProductsViewController.swift in Sources */,
+				4E62F0962503E4FB004E1CCD /* RatesListModel.swift in Sources */,
 				4E62F07B2503A1D9004E1CCD /* BaseApiService.swift in Sources */,
 				4E62F0412503812E004E1CCD /* SceneDelegate.swift in Sources */,
 				4E62F0822503CCE4004E1CCD /* ProductsListPresenter.swift in Sources */,
+				4E62F0902503D25A004E1CCD /* ProductsViewDelegate.swift in Sources */,
 				4E62F07325038478004E1CCD /* GNBServices.swift in Sources */,
 				4E62F08E2503D13B004E1CCD /* TransactionsProductPresenter.swift in Sources */,
 			);
@@ -571,14 +591,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4E62F0442503812E004E1CCD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4E62F0452503812E004E1CCD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4E62F0492503812F004E1CCD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

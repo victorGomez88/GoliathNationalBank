@@ -13,35 +13,33 @@ import ObjectMapper
 
 class GNBServices {
     
-    func getRates(success: (@escaping ([RatesModel]) -> Void),
+    func getRates(success: (@escaping (RatesListModel) -> Void),
                   failure: (@escaping () -> Void)){
         
         BaseApiService.doGetRequest(params: nil,
                                     request: REQUESTNAMES.RATES.rawValue,
-                                    outputClass: RatesModel(),
                                     success: { response in
                                         
-                                        success(response)
-//                                        for rate in response {
-//                                            print("From: " + (rate.currencyFrom ?? ""))
-//                                            print("To: " + (rate.currencyTo ?? ""))
-//                                            print("Rate: " + (rate.rate ?? ""))
-//                                        }
+                                        var ratesList = RatesListModel()
+                                        ratesList.mapping(response)
+                                        success(ratesList)
+                             
         }) {
             failure()
         }
     }
     
     
-    func getTransactions(success: (@escaping ([TransactionsModel]) -> Void),
+    func getTransactions(success: (@escaping (TransactionsListModel) -> Void),
                          failure: (@escaping () -> Void)){
         
         BaseApiService.doGetRequest(params: nil,
                                     request: REQUESTNAMES.TRANSACTIONS.rawValue,
-                                    outputClass: TransactionsModel(),
                                     success: { response in
+                                        var transactionsList = TransactionsListModel()
+                                        transactionsList.mapping(response)
                                         
-                                        success(response)
+                                        success(transactionsList)
                                         
         }) {
             failure()

@@ -20,24 +20,36 @@ public class BaseApiService {
 
     static let endpoint : String = "http://quiet-stone-2094.herokuapp.com/"
     
-    public static func doGetRequest<T:Mappable>(params: [String:Any]?,
+    public static func doGetRequest(params: [String:Any]?,
                                                request: String,
-                                               outputClass : T,
-                                               success succeed: (@escaping ([T]) -> Void),
+                                               success succeed: (@escaping (Any) -> Void),
                                                failure fail: (@escaping () -> Void)) {
         
-        Alamofire.request(endpoint + request, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseArray(completionHandler: { (response: DataResponse<[T]>) in
-                   
-                   switch response.result {
-                   case .success(let value):
-                   succeed(value)
-                       break
-                   case .failure:
-                    fail()
-                       break
-                       
-                   }
-               })
+        Alamofire.request(endpoint + request, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
+             switch response.result {
+             case .success(let value):
+                succeed(value)
+                break
+             case .failure:
+                fail()
+                break
+                
+            }
+        }
+        
+        
+//        responseArray(completionHandler: { (response: DataResponse<[T]>) in
+//
+//                   switch response.result {
+//                   case .success(let value):
+//                   succeed(value)
+//                       break
+//                   case .failure:
+//                    fail()
+//                       break
+//
+//                   }
+//               })
     }
     
     
