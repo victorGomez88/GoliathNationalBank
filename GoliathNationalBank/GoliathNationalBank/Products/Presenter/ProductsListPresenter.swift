@@ -10,10 +10,10 @@ import Foundation
 
 class ProductsListPresenter {
     
-    private let service : GNBServices
+    private let service : ProductsDataSource
     weak private var productDelegate : ProductsViewDelegate?
     
-    init(service: GNBServices, delegate: ProductsViewDelegate) {
+    init(service: ProductsDataSource, delegate: ProductsViewDelegate) {
         self.service = service
         self.productDelegate = delegate
     }

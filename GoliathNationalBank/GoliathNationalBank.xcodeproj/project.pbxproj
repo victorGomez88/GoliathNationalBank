@@ -10,13 +10,16 @@
 		1135B7F27F3D47BB7EE006BD /* Pods_GoliathNationalBankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBE9DDBF79C2F2269175EE /* Pods_GoliathNationalBankUITests.framework */; };
 		2149A0F61133FA528C2397EC /* Pods_GoliathNationalBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E0B6DAAC24941D1CA3865A /* Pods_GoliathNationalBankTests.framework */; };
 		24526720BBF3EDE3D1F56536 /* Pods_GoliathNationalBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4116410FF7D15A8F8205C968 /* Pods_GoliathNationalBank.framework */; };
+		4E2C1C312504EE5F00413698 /* ProductsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2C1C302504EE5F00413698 /* ProductsDataSource.swift */; };
+		4E2C1C362504EF5000413698 /* TransactionProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2C1C352504EF5000413698 /* TransactionProductModel.swift */; };
+		4E2C1C392504F2BA00413698 /* TransactionsProductsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2C1C382504F2BA00413698 /* TransactionsProductsDataSource.swift */; };
 		4E62F03F2503812E004E1CCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F03E2503812E004E1CCD /* AppDelegate.swift */; };
 		4E62F0412503812E004E1CCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0402503812E004E1CCD /* SceneDelegate.swift */; };
 		4E62F0482503812F004E1CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E62F0472503812F004E1CCD /* Assets.xcassets */; };
 		4E62F04B2503812F004E1CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E62F0492503812F004E1CCD /* LaunchScreen.storyboard */; };
 		4E62F0562503812F004E1CCD /* GoliathNationalBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0552503812F004E1CCD /* GoliathNationalBankTests.swift */; };
 		4E62F0612503812F004E1CCD /* GoliathNationalBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0602503812F004E1CCD /* GoliathNationalBankUITests.swift */; };
-		4E62F07325038478004E1CCD /* GNBServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F07225038478004E1CCD /* GNBServices.swift */; };
+		4E62F07325038478004E1CCD /* GNBApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F07225038478004E1CCD /* GNBApiServices.swift */; };
 		4E62F07525038B02004E1CCD /* RateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F07425038B02004E1CCD /* RateModel.swift */; };
 		4E62F0772503999F004E1CCD /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0762503999F004E1CCD /* TransactionModel.swift */; };
 		4E62F07B2503A1D9004E1CCD /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F07A2503A1D9004E1CCD /* BaseApiService.swift */; };
@@ -54,6 +57,9 @@
 		36E0B6DAAC24941D1CA3865A /* Pods_GoliathNationalBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoliathNationalBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A1999EACBBD424292D3434 /* Pods-GoliathNationalBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoliathNationalBankUITests.debug.xcconfig"; path = "Target Support Files/Pods-GoliathNationalBankUITests/Pods-GoliathNationalBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4116410FF7D15A8F8205C968 /* Pods_GoliathNationalBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoliathNationalBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2C1C302504EE5F00413698 /* ProductsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDataSource.swift; sourceTree = "<group>"; };
+		4E2C1C352504EF5000413698 /* TransactionProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionProductModel.swift; sourceTree = "<group>"; };
+		4E2C1C382504F2BA00413698 /* TransactionsProductsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsProductsDataSource.swift; sourceTree = "<group>"; };
 		4E62F03B2503812E004E1CCD /* GoliathNationalBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoliathNationalBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E62F03E2503812E004E1CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E62F0402503812E004E1CCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +72,7 @@
 		4E62F05C2503812F004E1CCD /* GoliathNationalBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoliathNationalBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E62F0602503812F004E1CCD /* GoliathNationalBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoliathNationalBankUITests.swift; sourceTree = "<group>"; };
 		4E62F0622503812F004E1CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E62F07225038478004E1CCD /* GNBServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBServices.swift; sourceTree = "<group>"; };
+		4E62F07225038478004E1CCD /* GNBApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBApiServices.swift; sourceTree = "<group>"; };
 		4E62F07425038B02004E1CCD /* RateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateModel.swift; sourceTree = "<group>"; };
 		4E62F0762503999F004E1CCD /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		4E62F07A2503A1D9004E1CCD /* BaseApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiService.swift; sourceTree = "<group>"; };
@@ -117,6 +123,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E2C1C322504EF0A00413698 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4E2C1C382504F2BA00413698 /* TransactionsProductsDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		4E2C1C372504EF6A00413698 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		4E62F0322503812E004E1CCD = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +196,7 @@
 		4E62F06E25038437004E1CCD /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				4E62F07225038478004E1CCD /* GNBServices.swift */,
+				4E62F07225038478004E1CCD /* GNBApiServices.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -192,6 +213,7 @@
 		4E62F0782503A1BE004E1CCD /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				4E2C1C372504EF6A00413698 /* Utils */,
 				4E62F06F2503843E004E1CCD /* Models */,
 				4E62F06E25038437004E1CCD /* DataSource */,
 				4E62F0792503A1C8004E1CCD /* Bases */,
@@ -237,6 +259,7 @@
 		4E62F0862503D018004E1CCD /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				4E2C1C302504EE5F00413698 /* ProductsDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -254,9 +277,9 @@
 		4E62F0882503D103004E1CCD /* TransactionsProduct */ = {
 			isa = PBXGroup;
 			children = (
+				4E2C1C322504EF0A00413698 /* DataSource */,
 				4E62F08C2503D129004E1CCD /* Presenter */,
 				4E62F08B2503D122004E1CCD /* Models */,
-				4E62F08A2503D11A004E1CCD /* DataSource */,
 				4E62F0892503D113004E1CCD /* Views */,
 			);
 			path = TransactionsProduct;
@@ -272,16 +295,10 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		4E62F08A2503D11A004E1CCD /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataSource;
-			sourceTree = "<group>";
-		};
 		4E62F08B2503D122004E1CCD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4E2C1C352504EF5000413698 /* TransactionProductModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -559,18 +576,21 @@
 			files = (
 				4E62F0982503E565004E1CCD /* TransactionsListModel.swift in Sources */,
 				4E62F0A02504E83C004E1CCD /* TransactionListViewController.swift in Sources */,
+				4E2C1C312504EE5F00413698 /* ProductsDataSource.swift in Sources */,
 				4E62F0772503999F004E1CCD /* TransactionModel.swift in Sources */,
 				4E62F07525038B02004E1CCD /* RateModel.swift in Sources */,
 				4E62F03F2503812E004E1CCD /* AppDelegate.swift in Sources */,
 				4E62F0922503D291004E1CCD /* ProductsViewController.swift in Sources */,
+				4E2C1C392504F2BA00413698 /* TransactionsProductsDataSource.swift in Sources */,
 				4E62F09E2504E815004E1CCD /* TransactionsListDelegate.swift in Sources */,
 				4E62F0962503E4FB004E1CCD /* RatesListModel.swift in Sources */,
 				4E62F07B2503A1D9004E1CCD /* BaseApiService.swift in Sources */,
 				4E62F0412503812E004E1CCD /* SceneDelegate.swift in Sources */,
 				4E62F0822503CCE4004E1CCD /* ProductsListPresenter.swift in Sources */,
 				4E62F09C2504D8EA004E1CCD /* ProductModel.swift in Sources */,
+				4E2C1C362504EF5000413698 /* TransactionProductModel.swift in Sources */,
 				4E62F0902503D25A004E1CCD /* ProductsViewDelegate.swift in Sources */,
-				4E62F07325038478004E1CCD /* GNBServices.swift in Sources */,
+				4E62F07325038478004E1CCD /* GNBApiServices.swift in Sources */,
 				4E62F08E2503D13B004E1CCD /* TransactionsProductPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

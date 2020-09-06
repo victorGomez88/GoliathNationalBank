@@ -9,6 +9,6 @@
 import Foundation
 
 protocol TransactionsListDelegate : NSObjectProtocol {
-    func displayTransactions(products: [ProductModel])
-    func obtainTotalTransactions()
+    func displayTransactions(transactions: [TransactionProductModel])
+    func obtainTotalTransactions(total: Double)
 }

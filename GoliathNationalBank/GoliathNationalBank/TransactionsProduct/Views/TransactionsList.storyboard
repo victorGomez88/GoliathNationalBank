@@ -10,7 +10,7 @@
         <!--Transaction List View Controller-->
         <scene sceneID="pKP-aK-qIT">
             <objects>
-                <viewController storyboardIdentifier="TransactionListViewControllerId" id="2CQ-0P-xBm" customClass="TransactionListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TransactionListViewControllerId" id="2CQ-0P-xBm" customClass="TransactionListViewController" customModule="GoliathNationalBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yjY-jC-ru0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,9 +21,29 @@
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYo-dA-vjj">
                                 <rect key="frame" x="0.0" y="796" width="414" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrm-BI-a89">
+                                        <rect key="frame" x="20" y="35" width="64" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4D-Z2-SEH">
+                                        <rect key="frame" x="330" y="20" width="64" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="Y4D-Z2-SEH" firstAttribute="centerY" secondItem="nrm-BI-a89" secondAttribute="centerY" id="2DS-41-1Nn"/>
+                                    <constraint firstItem="Y4D-Z2-SEH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nrm-BI-a89" secondAttribute="trailing" constant="20" id="7HE-Yg-lgZ"/>
+                                    <constraint firstItem="nrm-BI-a89" firstAttribute="leading" secondItem="OYo-dA-vjj" secondAttribute="leading" constant="20" id="O20-ZK-PH5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Y4D-Z2-SEH" secondAttribute="bottom" constant="20" id="OTd-ae-8J7"/>
+                                    <constraint firstItem="Y4D-Z2-SEH" firstAttribute="top" secondItem="OYo-dA-vjj" secondAttribute="top" constant="20" id="RiD-8Q-Eju"/>
                                     <constraint firstAttribute="height" constant="100" id="jjh-0Y-gDn"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y4D-Z2-SEH" secondAttribute="trailing" constant="20" id="vDq-Mt-Xkx"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -39,6 +59,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aoL-yO-2FT"/>
                     </view>
+                    <connections>
+                        <outlet property="lblTotalAmount" destination="Y4D-Z2-SEH" id="YMA-NT-diH"/>
+                        <outlet property="lblTotalName" destination="nrm-BI-a89" id="6hR-oF-qwm"/>
+                        <outlet property="tblTransactionsListTable" destination="K7Y-N8-0ys" id="49q-AC-jaw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vi3-b7-ekv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,7 +11,6 @@ import UIKit
 
 class ProductsViewController: UIViewController, ProductsViewDelegate {
    
-    
     @IBOutlet weak var tblProductTableView: UITableView!
     
     private var productsPresenter : ProductsListPresenter?
@@ -25,7 +24,7 @@ class ProductsViewController: UIViewController, ProductsViewDelegate {
         self.tblProductTableView.delegate = self
         self.tblProductTableView.dataSource = self
         
-        productsPresenter = ProductsListPresenter(service: GNBServices(), delegate: self)
+        productsPresenter = ProductsListPresenter(service: ProductsDataSource(), delegate: self)
         
         productsPresenter?.obtainProductList()
     }
@@ -45,10 +44,10 @@ extension ProductsViewController : UITableViewDelegate {
         
         let storyboard = UIStoryboard(name: "TransactionsList", bundle: nil)
         
-//        let vc : TransactionsListViewController = storyboard.instantiateViewController(identifier: "TransactionListViewControllerId"
+        let vc : TransactionListViewController = storyboard.instantiateViewController(identifier: "TransactionListViewControllerId")
+        vc.productName = self.productsList?[indexPath.row].productName
         
-        
-        self.navigationController?.pushViewController(storyboard.instantiateViewController(identifier: "TransactionListViewControllerId"), animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -65,6 +64,5 @@ extension ProductsViewController : UITableViewDataSource {
         
         return cell
     }
-    
     
 }
