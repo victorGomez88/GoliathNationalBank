@@ -11,10 +11,12 @@ import Foundation
 class TransactionProductModel {
     
     var amount : Double?
-    var currency : String?
     
     init(transaction: TransactionModel) {
-        self.amount = Double(transaction.amount ?? "")
-        self.currency = transaction.currency
+        
+        guard let transactionAmount = Double(transaction.amount ?? "") else {return}
+        
+        self.amount = CurrencyConverterUtil.converterCurrency(amount:transactionAmount, currency: transaction.currency ?? "")
+        
     }
 }

@@ -13,6 +13,7 @@
 		4E2C1C312504EE5F00413698 /* ProductsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2C1C302504EE5F00413698 /* ProductsDataSource.swift */; };
 		4E2C1C362504EF5000413698 /* TransactionProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2C1C352504EF5000413698 /* TransactionProductModel.swift */; };
 		4E2C1C392504F2BA00413698 /* TransactionsProductsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2C1C382504F2BA00413698 /* TransactionsProductsDataSource.swift */; };
+		4E2C1C3B250511B500413698 /* CurrencyConverterUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2C1C3A250511B500413698 /* CurrencyConverterUtil.swift */; };
 		4E62F03F2503812E004E1CCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F03E2503812E004E1CCD /* AppDelegate.swift */; };
 		4E62F0412503812E004E1CCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0402503812E004E1CCD /* SceneDelegate.swift */; };
 		4E62F0482503812F004E1CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E62F0472503812F004E1CCD /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		4E2C1C302504EE5F00413698 /* ProductsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDataSource.swift; sourceTree = "<group>"; };
 		4E2C1C352504EF5000413698 /* TransactionProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionProductModel.swift; sourceTree = "<group>"; };
 		4E2C1C382504F2BA00413698 /* TransactionsProductsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsProductsDataSource.swift; sourceTree = "<group>"; };
+		4E2C1C3A250511B500413698 /* CurrencyConverterUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterUtil.swift; sourceTree = "<group>"; };
 		4E62F03B2503812E004E1CCD /* GoliathNationalBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoliathNationalBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E62F03E2503812E004E1CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E62F0402503812E004E1CCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		4E2C1C372504EF6A00413698 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4E2C1C3A250511B500413698 /* CurrencyConverterUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				4E62F0902503D25A004E1CCD /* ProductsViewDelegate.swift in Sources */,
 				4E62F07325038478004E1CCD /* GNBApiServices.swift in Sources */,
 				4E62F08E2503D13B004E1CCD /* TransactionsProductPresenter.swift in Sources */,
+				4E2C1C3B250511B500413698 /* CurrencyConverterUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

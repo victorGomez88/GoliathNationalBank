@@ -21,14 +21,23 @@ class TransactionsProductPresenter {
     
     func obtainTransactionsList(product: String){
         
-        self.service.getTransactions(success: { (transationsList) in
+        self.service.getRates(success: { (ratesList) in
             
-            self.transactionsDelegate?.obtainTotalTransactions(total: self.obtainTotalAmountOfTransactions(product: product, transactions: transationsList))
+            CurrencyConverterUtil.groupedConversors(rates: ratesList)
             
-            self.transactionsDelegate?.displayTransactions(transactions: self.obtainTransactionsByProduct(product: product, transactions: transationsList))
+            self.service.getTransactions(success: { (transationsList) in
+                
+                self.transactionsDelegate?.obtainTotalTransactions(total: self.obtainTotalAmountOfTransactions(product: product, transactions: transationsList))
+                
+                self.transactionsDelegate?.displayTransactions(transactions: self.obtainTransactionsByProduct(product: product, transactions: transationsList))
+            }) {
+                //Failure response actions
+            }
         }) {
-            //Failure response actions
+           //Failure response actions
         }
+        
+        
     }
     
     func obtainTransactionsByProduct(product: String, transactions: TransactionsListModel) -> [TransactionProductModel] {

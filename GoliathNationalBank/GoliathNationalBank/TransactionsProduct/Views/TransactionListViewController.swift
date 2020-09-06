@@ -42,7 +42,7 @@ class TransactionListViewController: UIViewController, TransactionsListDelegate 
     }
     
     func obtainTotalTransactions(total: Double) {
-        self.lblTotalAmount.text = String(format: "%.2f",total)
+        self.lblTotalAmount.text = String(format: "%.2f€",total).replacingOccurrences(of: ".", with: ",")
     }
 }
 
@@ -59,7 +59,7 @@ extension TransactionListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "transactionCell")
         
-        cell.textLabel?.text = String(format: "Transaction Nº%d  -> %.2f",indexPath.row, self.transactionsList?[indexPath.row].amount ?? 0.00)
+        cell.textLabel?.text = String(format: "Transaction Nº%d  -> %.2f€",indexPath.row, self.transactionsList?[indexPath.row].amount ?? 0.00).replacingOccurrences(of: ".", with: ",")
         
         return cell
     }
