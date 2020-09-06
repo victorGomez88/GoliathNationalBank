@@ -13,6 +13,9 @@ class CurrencyConverterUtil {
     
     static var groupedRates : Dictionary<String,[RateModel]>?
     
+    /// Conversion of amount to EUR
+    /// - Parameter amount: amount of transaction
+    /// - Parameter currency: currency of transaction
     static func converterCurrency(amount: Double, currency: String) -> Double {
         
         var amountConverted : Double = amount
@@ -41,6 +44,8 @@ class CurrencyConverterUtil {
         return amountConverted
     }
     
+    /// Grouped rates by currency from
+    /// - Parameter rates: List of all rates
     static func groupedConversors(rates: RatesListModel) {
         
         self.groupedRates = Dictionary(grouping: rates.ratesList ?? [], by: { ($0.currencyFrom ?? "") })

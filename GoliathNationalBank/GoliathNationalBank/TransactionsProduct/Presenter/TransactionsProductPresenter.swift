@@ -19,6 +19,8 @@ class TransactionsProductPresenter {
     }
     
     
+    /// Obtain all transactions
+    /// - Parameter product: Product name (SKU) to obtain transactions
     func obtainTransactionsList(product: String){
         
         self.service.getRates(success: { (ratesList) in
@@ -40,6 +42,9 @@ class TransactionsProductPresenter {
         
     }
     
+    /// Return transaction of a single product
+    /// - Parameter product: Product to filter transactions
+    /// - Parameter transactions: List of all transactions
     func obtainTransactionsByProduct(product: String, transactions: TransactionsListModel) -> [TransactionProductModel] {
         
         var transactionsProductList : [TransactionProductModel] = []
@@ -53,6 +58,9 @@ class TransactionsProductPresenter {
         return transactionsProductList
     }
     
+    /// Return sum amounts of all transactions of the same product
+    /// - Parameter product: Product to obtain its transactions
+    /// - Parameter transactions: List of all transactions of all products
     func obtainTotalAmountOfTransactions(product: String, transactions: TransactionsListModel) -> Double {
         
         let transactions = self.obtainTransactionsByProduct(product: product, transactions: transactions)

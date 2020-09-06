@@ -30,7 +30,8 @@ class ProductsListPresenter {
         }
     }
     
-    //Grouping all transactions by Transaction Name and creating new ProductsModels
+    /// Grouping all transactions by Transaction Name and creating new ProductsModels
+    /// - Parameter transactions: Transactions list model with of all products
     func groupTransactactionByProduct(transactions: TransactionsListModel) -> [ProductModel]{
         
         var productsList : [ProductModel] = []

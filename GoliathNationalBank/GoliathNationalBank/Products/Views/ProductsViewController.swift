@@ -40,7 +40,6 @@ class ProductsViewController: UIViewController, ProductsViewDelegate {
 extension ProductsViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("Producto Seleccionado: \(self.productsList?[indexPath.row].productName)")
         
         let storyboard = UIStoryboard(name: "TransactionsList", bundle: nil)
         
