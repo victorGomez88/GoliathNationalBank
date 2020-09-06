@@ -20,7 +20,7 @@ class GNBServices {
                                     request: REQUESTNAMES.RATES.rawValue,
                                     success: { response in
                                         
-                                        var ratesList = RatesListModel()
+                                        let ratesList = RatesListModel()
                                         ratesList.mapping(response)
                                         success(ratesList)
                              
@@ -36,7 +36,7 @@ class GNBServices {
         BaseApiService.doGetRequest(params: nil,
                                     request: REQUESTNAMES.TRANSACTIONS.rawValue,
                                     success: { response in
-                                        var transactionsList = TransactionsListModel()
+                                        let transactionsList = TransactionsListModel()
                                         transactionsList.mapping(response)
                                         
                                         success(transactionsList)

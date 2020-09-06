@@ -11,10 +11,10 @@ import ObjectMapper
 
 class TransactionsListModel : NSObject {
     
-    var transactionsList : [TransactionsModel]?
+    var transactionsList : [TransactionModel]? = []
 
     func mapping(_ response: Any) {
-        self.transactionsList = Mapper<TransactionsModel>().mapArray(JSONObject:response)
+        self.transactionsList = Mapper<TransactionModel>().mapArray(JSONObject:response)
     }
     
 }

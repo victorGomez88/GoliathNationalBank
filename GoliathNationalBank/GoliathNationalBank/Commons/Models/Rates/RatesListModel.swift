@@ -11,10 +11,10 @@ import ObjectMapper
 
 class RatesListModel : NSObject{
     
-    var ratesList : [RatesModel]?
+    var ratesList : [RateModel]?
 
     func mapping(_ response: Any) {
-        self.ratesList = Mapper<RatesModel>().mapArray(JSONObject:response)
+        self.ratesList = Mapper<RateModel>().mapArray(JSONObject:response)
     }
     
 }

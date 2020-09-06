@@ -20,18 +20,28 @@ class ProductsListPresenter {
     
     
     func obtainProductList() {
+        
         self.service.getTransactions(success: { (transationsList) in
             
-            for transaction in transationsList.transactionsList ?? [] {
-                print("Transaction: " + (transaction.transaction ?? ""))
-                print("Amount: " + (transaction.amount ?? ""))
-                print("Currency: " + (transaction.currency ?? ""))
-            }
-            
-            self.productDelegate?.displayProducts()
+            self.productDelegate?.displayProducts(products: self.groupTransactactionByProduct(transactions: transationsList))
             
         }) {
             //Failure response actions
         }
+    }
+    
+    //Grouping all transactions by Transaction Name and creating new ProductsModels
+    func groupTransactactionByProduct(transactions: TransactionsListModel) -> [ProductModel]{
+        
+        var productsList : [ProductModel] = []
+        
+        let groupedTransactions = Dictionary(grouping: transactions.transactionsList ?? [], by: { ($0.transaction ?? "") })
+        
+        groupedTransactions.forEach { transaction in
+            productsList.append(ProductModel(productName: transaction.key, transactions: transaction.value))
+        }
+        
+        
+        return productsList
     }
 }

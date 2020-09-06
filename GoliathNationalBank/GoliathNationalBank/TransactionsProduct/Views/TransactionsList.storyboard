@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transaction List View Controller-->
+        <scene sceneID="pKP-aK-qIT">
+            <objects>
+                <viewController storyboardIdentifier="TransactionListViewControllerId" id="2CQ-0P-xBm" customClass="TransactionListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yjY-jC-ru0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K7Y-N8-0ys">
+                                <rect key="frame" x="0.0" y="44" width="414" height="752"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYo-dA-vjj">
+                                <rect key="frame" x="0.0" y="796" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jjh-0Y-gDn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OYo-dA-vjj" secondAttribute="bottom" id="IFc-Am-huy"/>
+                            <constraint firstItem="OYo-dA-vjj" firstAttribute="top" secondItem="K7Y-N8-0ys" secondAttribute="bottom" id="JpV-0B-RvE"/>
+                            <constraint firstItem="aoL-yO-2FT" firstAttribute="trailing" secondItem="OYo-dA-vjj" secondAttribute="trailing" id="L1D-Qm-0Yg"/>
+                            <constraint firstItem="OYo-dA-vjj" firstAttribute="leading" secondItem="aoL-yO-2FT" secondAttribute="leading" id="OGt-NN-8vv"/>
+                            <constraint firstItem="K7Y-N8-0ys" firstAttribute="leading" secondItem="aoL-yO-2FT" secondAttribute="leading" id="epr-uT-fpd"/>
+                            <constraint firstItem="aoL-yO-2FT" firstAttribute="trailing" secondItem="K7Y-N8-0ys" secondAttribute="trailing" id="kHB-r3-vz9"/>
+                            <constraint firstItem="K7Y-N8-0ys" firstAttribute="top" secondItem="aoL-yO-2FT" secondAttribute="top" id="tMh-RK-prs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aoL-yO-2FT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vi3-b7-ekv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="88"/>
+        </scene>
+    </scenes>
+</document>

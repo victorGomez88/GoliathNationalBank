@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class RatesModel : Mappable {
+class RateModel : Mappable {
     
     var currencyFrom : String?
     var currencyTo : String?

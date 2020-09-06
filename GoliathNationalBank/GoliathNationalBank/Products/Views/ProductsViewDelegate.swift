@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ProductsViewDelegate : NSObjectProtocol {
-    func displayProducts()
+    func displayProducts(products: [ProductModel])
 }

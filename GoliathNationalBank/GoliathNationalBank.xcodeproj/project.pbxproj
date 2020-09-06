@@ -17,8 +17,8 @@
 		4E62F0562503812F004E1CCD /* GoliathNationalBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0552503812F004E1CCD /* GoliathNationalBankTests.swift */; };
 		4E62F0612503812F004E1CCD /* GoliathNationalBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0602503812F004E1CCD /* GoliathNationalBankUITests.swift */; };
 		4E62F07325038478004E1CCD /* GNBServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F07225038478004E1CCD /* GNBServices.swift */; };
-		4E62F07525038B02004E1CCD /* RatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F07425038B02004E1CCD /* RatesModel.swift */; };
-		4E62F0772503999F004E1CCD /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0762503999F004E1CCD /* TransactionsModel.swift */; };
+		4E62F07525038B02004E1CCD /* RateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F07425038B02004E1CCD /* RateModel.swift */; };
+		4E62F0772503999F004E1CCD /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0762503999F004E1CCD /* TransactionModel.swift */; };
 		4E62F07B2503A1D9004E1CCD /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F07A2503A1D9004E1CCD /* BaseApiService.swift */; };
 		4E62F0822503CCE4004E1CCD /* ProductsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0812503CCE4004E1CCD /* ProductsListPresenter.swift */; };
 		4E62F08E2503D13B004E1CCD /* TransactionsProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F08D2503D13B004E1CCD /* TransactionsProductPresenter.swift */; };
@@ -27,6 +27,10 @@
 		4E62F0942503D4A1004E1CCD /* Products.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E62F0932503D4A1004E1CCD /* Products.storyboard */; };
 		4E62F0962503E4FB004E1CCD /* RatesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0952503E4FB004E1CCD /* RatesListModel.swift */; };
 		4E62F0982503E565004E1CCD /* TransactionsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F0972503E565004E1CCD /* TransactionsListModel.swift */; };
+		4E62F09C2504D8EA004E1CCD /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F09B2504D8EA004E1CCD /* ProductModel.swift */; };
+		4E62F09E2504E815004E1CCD /* TransactionsListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F09D2504E815004E1CCD /* TransactionsListDelegate.swift */; };
+		4E62F0A02504E83C004E1CCD /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F09F2504E83C004E1CCD /* TransactionListViewController.swift */; };
+		4E62F0A22504E871004E1CCD /* TransactionsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E62F0A12504E871004E1CCD /* TransactionsList.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +67,8 @@
 		4E62F0602503812F004E1CCD /* GoliathNationalBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoliathNationalBankUITests.swift; sourceTree = "<group>"; };
 		4E62F0622503812F004E1CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E62F07225038478004E1CCD /* GNBServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBServices.swift; sourceTree = "<group>"; };
-		4E62F07425038B02004E1CCD /* RatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesModel.swift; sourceTree = "<group>"; };
-		4E62F0762503999F004E1CCD /* TransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsModel.swift; sourceTree = "<group>"; };
+		4E62F07425038B02004E1CCD /* RateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateModel.swift; sourceTree = "<group>"; };
+		4E62F0762503999F004E1CCD /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		4E62F07A2503A1D9004E1CCD /* BaseApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiService.swift; sourceTree = "<group>"; };
 		4E62F0812503CCE4004E1CCD /* ProductsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListPresenter.swift; sourceTree = "<group>"; };
 		4E62F08D2503D13B004E1CCD /* TransactionsProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsProductPresenter.swift; sourceTree = "<group>"; };
@@ -73,6 +77,10 @@
 		4E62F0932503D4A1004E1CCD /* Products.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Products.storyboard; sourceTree = "<group>"; };
 		4E62F0952503E4FB004E1CCD /* RatesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesListModel.swift; sourceTree = "<group>"; };
 		4E62F0972503E565004E1CCD /* TransactionsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListModel.swift; sourceTree = "<group>"; };
+		4E62F09B2504D8EA004E1CCD /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		4E62F09D2504E815004E1CCD /* TransactionsListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListDelegate.swift; sourceTree = "<group>"; };
+		4E62F09F2504E83C004E1CCD /* TransactionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewController.swift; sourceTree = "<group>"; };
+		4E62F0A12504E871004E1CCD /* TransactionsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionsList.storyboard; sourceTree = "<group>"; };
 		6290BA8DB03B824C65ED73D8 /* Pods-GoliathNationalBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoliathNationalBankTests.debug.xcconfig"; path = "Target Support Files/Pods-GoliathNationalBankTests/Pods-GoliathNationalBankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66437472329D1B0EE11D4FA0 /* Pods-GoliathNationalBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoliathNationalBankTests.release.xcconfig"; path = "Target Support Files/Pods-GoliathNationalBankTests/Pods-GoliathNationalBankTests.release.xcconfig"; sourceTree = "<group>"; };
 		7F64FCA4CE4F99D98BC5C1E2 /* Pods-GoliathNationalBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoliathNationalBankUITests.release.xcconfig"; path = "Target Support Files/Pods-GoliathNationalBankUITests/Pods-GoliathNationalBankUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -221,6 +229,7 @@
 		4E62F0852503CFED004E1CCD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4E62F09B2504D8EA004E1CCD /* ProductModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -256,6 +265,9 @@
 		4E62F0892503D113004E1CCD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4E62F09D2504E815004E1CCD /* TransactionsListDelegate.swift */,
+				4E62F09F2504E83C004E1CCD /* TransactionListViewController.swift */,
+				4E62F0A12504E871004E1CCD /* TransactionsList.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,7 +297,7 @@
 		4E62F099250458A0004E1CCD /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
-				4E62F0762503999F004E1CCD /* TransactionsModel.swift */,
+				4E62F0762503999F004E1CCD /* TransactionModel.swift */,
 				4E62F0972503E565004E1CCD /* TransactionsListModel.swift */,
 			);
 			path = Transactions;
@@ -294,7 +306,7 @@
 		4E62F09A250458C5004E1CCD /* Rates */ = {
 			isa = PBXGroup;
 			children = (
-				4E62F07425038B02004E1CCD /* RatesModel.swift */,
+				4E62F07425038B02004E1CCD /* RateModel.swift */,
 				4E62F0952503E4FB004E1CCD /* RatesListModel.swift */,
 			);
 			path = Rates;
@@ -434,6 +446,7 @@
 				4E62F0942503D4A1004E1CCD /* Products.storyboard in Resources */,
 				4E62F04B2503812F004E1CCD /* LaunchScreen.storyboard in Resources */,
 				4E62F0482503812F004E1CCD /* Assets.xcassets in Resources */,
+				4E62F0A22504E871004E1CCD /* TransactionsList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,14 +558,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E62F0982503E565004E1CCD /* TransactionsListModel.swift in Sources */,
-				4E62F0772503999F004E1CCD /* TransactionsModel.swift in Sources */,
-				4E62F07525038B02004E1CCD /* RatesModel.swift in Sources */,
+				4E62F0A02504E83C004E1CCD /* TransactionListViewController.swift in Sources */,
+				4E62F0772503999F004E1CCD /* TransactionModel.swift in Sources */,
+				4E62F07525038B02004E1CCD /* RateModel.swift in Sources */,
 				4E62F03F2503812E004E1CCD /* AppDelegate.swift in Sources */,
 				4E62F0922503D291004E1CCD /* ProductsViewController.swift in Sources */,
+				4E62F09E2504E815004E1CCD /* TransactionsListDelegate.swift in Sources */,
 				4E62F0962503E4FB004E1CCD /* RatesListModel.swift in Sources */,
 				4E62F07B2503A1D9004E1CCD /* BaseApiService.swift in Sources */,
 				4E62F0412503812E004E1CCD /* SceneDelegate.swift in Sources */,
 				4E62F0822503CCE4004E1CCD /* ProductsListPresenter.swift in Sources */,
+				4E62F09C2504D8EA004E1CCD /* ProductModel.swift in Sources */,
 				4E62F0902503D25A004E1CCD /* ProductsViewDelegate.swift in Sources */,
 				4E62F07325038478004E1CCD /* GNBServices.swift in Sources */,
 				4E62F08E2503D13B004E1CCD /* TransactionsProductPresenter.swift in Sources */,
